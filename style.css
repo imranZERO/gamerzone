@@ -203,6 +203,9 @@ nav ul li:nth-child(3) a {
 		margin-right: 1rem;
 	}
 	.btn-primary, .btn-secondary { font-size: 1rem; }
+	.we-are-games-container { flex-direction: column; }
+	.we-are-gamers .content { width: auto; text-align: center; }
+	.we-are-gamers .content h4 { margin-top: 2rem; }
 }
 
 
@@ -222,6 +225,9 @@ nav ul li:nth-child(3) a {
 		text-align: center;
 	}
 	.banner div { max-width: 100%; }
+	.we-are-games-container { flex-direction: column; }
+	.we-are-gamers .content { width: auto; text-align: center; }
+	.we-are-gamers .content h4 { margin-top: 2rem; }
 }
 
 
