@@ -40,7 +40,7 @@ header {
 }
 nav {
 	padding: 0 200px;
-	height: 130px;
+	/* height: 130px; */
 	justify-content: space-between;
 	align-items: center;
 	background: #FFF;
@@ -63,6 +63,7 @@ nav ul {
 	align-items: center;
 	list-style: none;
 	gap: 30px;
+	padding: 0;
 }
 nav ul li a {
 	text-decoration: none;
@@ -111,6 +112,7 @@ nav ul li:nth-child(3) a {
 }
 .banner-content ul {
 	padding-left: 1rem;
+	text-align: left;
 }
 .banner-content li {
 	color: #534C64;
@@ -129,4 +131,51 @@ nav ul li:nth-child(3) a {
 }
 .banner img {
 	padding-top: 2rem;
+}
+
+
+@media screen and (max-width: 576px) {
+	nav,
+	.nav-menu ul
+	{ flex-direction: column; }
+	nav {
+		padding: 2rem;
+		box-shadow: none;
+	}
+	.banner {
+		padding: 1rem;
+		gap: 50px;
+		flex-direction: column-reverse;
+		background-position: bottom left;
+		justify-content: center;
+		text-align: center;
+		background-size: 130%;
+	}
+	.banner div { max-width: 100%; }
+	.banner-content h1 {text-align: center;}
+	.playlike {font-size: 2.7rem;}
+	.goat {font-size: 5.5rem;}
+	.sign-in {
+		margin-top: 1.25rem;
+		margin-right: 1rem;
+	}
+	.btn-primary, .btn-secondary { font-size: 1rem; }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+	nav {
+		padding: 1rem;
+		box-shadow: none;
+		flex-direction: column;
+	}
+	.banner {
+		padding: 3rem;
+		gap: 50px;
+		flex-direction: column-reverse;
+		background-position: bottom left;
+		justify-content: center;
+		text-align: center;
+	}
+	.banner div { max-width: 100%; }
 }
