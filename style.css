@@ -178,7 +178,7 @@ nav ul li:nth-child(3) a {
 
 /* Funny videos section */
 .videos {
-	margin: 100px auto;
+	margin: 130px auto;
 	padding: 0 1rem;
 	text-align: center;
 }
@@ -225,7 +225,6 @@ nav ul li:nth-child(3) a {
 	height: auto;
 	transition: .5s ease;
 	backface-visibility: hidden;
-	cursor: pointer;
 }
 .overlay {
 	transition: .5s ease;
@@ -249,6 +248,48 @@ nav ul li:nth-child(3) a {
 }
 .video-card:hover .image { filter: brightness(30%); }
 .video-card:hover .overlay { opacity: 1; }
+.video-card .image, .video-card .overlay { cursor: pointer; }
+
+
+/* Play instantly section */
+.play-instant {
+	max-width: 1366px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 130px auto 0;
+	gap: 250px;
+	text-align: right;
+}
+.play-instant-content {
+	max-width: 35%;
+	margin-top: -200px;
+}
+.play-instant h2 {
+	font-size: 2.8rem;
+	font-weight: 700;
+	line-height: 3.5rem; /* 125% */
+	margin: 0;
+}
+.instantly {
+	background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.play-instant p {
+	color: #534C64;
+	font-size: 1.2rem;
+	line-height: 30px; /* 166.667% */
+}
+.play-instant-img {
+	text-align: left;
+}
+.play-instant .second-img {
+	position: relative;
+	bottom: 300px;
+	right: 150px;
+}
 
 
 /* Responsive mobile styles */
@@ -282,6 +323,28 @@ nav ul li:nth-child(3) a {
 	.we-are-gamers .content { width: auto; text-align: center; }
 	.we-are-gamers .content h4 { margin-top: 2rem; }
 	.videos-container { flex-direction: column; }
+	.play-instant {
+		flex-direction: column;
+		text-align: center;
+		gap: 60px;
+		padding: 0 1rem;
+	}
+	.play-instant-content {
+		max-width: 100%;
+		margin-top: 0;
+	}
+	.play-instant-img {
+		text-align: right;
+	}
+	.play-instant .first-img {
+		max-width: 80%;
+	}
+	.play-instant .second-img {
+		max-width: 40%;
+		position: relative;
+		bottom: 8rem;
+		right: 12rem;
+	}
 }
 
 
@@ -305,6 +368,28 @@ nav ul li:nth-child(3) a {
 	.we-are-gamers .content { width: auto; text-align: center; }
 	.we-are-gamers .content h4 { margin-top: 2rem; }
 	.videos-container { flex-direction: column; padding: 0 3rem;}
+	.play-instant {
+		flex-direction: column;
+		text-align: center;
+		gap: 60px;
+		padding: 0 1rem;
+	}
+	.play-instant-content {
+		max-width: 100%;
+		margin-top: 0;
+	}
+	.play-instant-img {
+		text-align: center;
+	}
+	.play-instant .first-img {
+		max-width: 80%;
+	}
+	.play-instant .second-img {
+		max-width: 40%;
+		position: relative;
+		bottom: 10rem;
+		right: 12rem;
+	}
 }
 
 
